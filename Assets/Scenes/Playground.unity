@@ -6552,6 +6552,7 @@ GameObject:
   - component: {fileID: 9107767008930529174}
   - component: {fileID: 9107767008930529183}
   - component: {fileID: 9107767008930529182}
+  - component: {fileID: 9107767008930529187}
   m_Layer: 8
   m_Name: NPC
   m_TagString: Player
@@ -6683,6 +6684,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da25d349bde57b43896b0a0285c1ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9107767008930529187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107767008930529180}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35bdbb5e3a8eb149a56100c23c83b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  me: {fileID: 9107767008930529181}
+  player: {fileID: 94713405}
 --- !u!4 &9169114708736902509
 Transform:
   m_ObjectHideFlags: 0
