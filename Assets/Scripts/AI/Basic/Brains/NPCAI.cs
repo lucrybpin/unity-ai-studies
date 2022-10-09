@@ -27,6 +27,7 @@ namespace Opus.AI {
             Idle,
             Chasing,
             Attacking,
+            Alert,
             GoingBack
         }
 

@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 94713404}
   - component: {fileID: 94713403}
   - component: {fileID: 94713402}
+  - component: {fileID: 94713409}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -465,7 +466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94713401}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.75, y: 0, z: 0}
+  m_LocalPosition: {x: -3.55, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -475,6 +476,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &94713409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94713401}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.37, y: 2, z: 0.37}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &108014584
 GameObject:
   m_ObjectHideFlags: 0
@@ -6547,12 +6561,13 @@ GameObject:
   - component: {fileID: 8443855102424589606}
   - component: {fileID: 9107767008930529181}
   - component: {fileID: 9107767008930529185}
+  - component: {fileID: 9107767008930529187}
   - component: {fileID: 9107767008930529186}
+  - component: {fileID: 9107767008930529188}
   - component: {fileID: 2580199399478984540}
   - component: {fileID: 9107767008930529174}
   - component: {fileID: 9107767008930529183}
   - component: {fileID: 9107767008930529182}
-  - component: {fileID: 9107767008930529187}
   m_Layer: 8
   m_Name: NPC
   m_TagString: Player
@@ -6698,6 +6713,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   me: {fileID: 9107767008930529181}
   player: {fileID: 94713405}
+--- !u!114 &9107767008930529188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107767008930529180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422fb6956201c7944ae2113a1a53b0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTasksPerTick: 500
+  behavior: {fileID: 11400000, guid: 9317a16f3a9aec049a585e4268ee98a3, type: 2}
+  paused: 0
+  restartWhenFinished: 0
+  blackboard:
+    intParams: 
+    intParamsNames: []
+    intParamsLostDefaultValue: 
+    boolParams: 
+    boolParamsNames: []
+    boolParamsLostDefaultValue: 
+    floatParams: []
+    floatParamsNames: []
+    floatParamsLostDefaultValue: 
+    stringParams: []
+    stringParamsNames: []
+    stringParamsLostDefaultValue: 
+    colorParams: []
+    colorParamsNames: []
+    colorParamsLostDefaultValue: 
+    objectParams:
+    - {fileID: 94713401}
+    objectParamsNames:
+    - Target
+    objectParamsLostDefaultValue: 
+    layerMaskParams: []
+    layerMaskParamsNames: []
+    layerMaskParamsLostDefaultValue: 
+    enumParamsNames: []
+    enumParamsLostDefaultValue: 
+    vector2Params: []
+    vector2ParamsNames: []
+    vector2ParamsLostDefaultValue: 
+    vector3Params: []
+    vector3ParamsNames: []
+    vector3ParamsLostDefaultValue: 
+    vector4Params: []
+    vector4ParamsNames: []
+    vector4ParamsLostDefaultValue: 
+    rectParams: []
+    rectParamsNames: []
+    rectParamsLostDefaultValue: 
+    animationCurveParams: []
+    animationCurveParamsNames: []
+    animationCurveParamsLostDefaultValue: 
+    boundsParams: []
+    boundsParamsNames: []
+    boundsParamsLostDefaultValue: 
+    gradientParams: []
+    gradientParamsNames: []
+    gradientParamsLostDefaultValue: 
+    quaternionParams: []
+    quaternionParamsNames: []
+    quaternionParamsLostDefaultValue: 
 --- !u!4 &9169114708736902509
 Transform:
   m_ObjectHideFlags: 0
